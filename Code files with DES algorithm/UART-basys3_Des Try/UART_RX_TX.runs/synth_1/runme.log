@@ -1,0 +1,699 @@
+
+*** Running vivado
+    with args -log controller.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source controller.tcl
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source controller.tcl -notrace
+Command: synth_design -top controller -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 63108
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/gourab/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1957.336 ; gain = 368.770 ; free physical = 245 ; free virtual = 4866
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1379.297; parent = 1174.670; children = 204.627
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2934.246; parent = 1961.309; children = 972.938
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'controller' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/new/controller.v:7]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/new/controller.v:59]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.runs/synth_1/.Xil/Vivado-63009-gourab-Inspiron-15-3511/realtime/ila_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.runs/synth_1/.Xil/Vivado-63009-gourab-Inspiron-15-3511/realtime/ila_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/UART_RX/uart_rx.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/UART_RX/uart_rx.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Des_Top' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Des_Top.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Initial_Permutation' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/initial_Perm.v:21]
+WARNING: [Synth 8-567] referenced signal 'PLAIN_TEXT' should be on the sensitivity list [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/initial_Perm.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'Initial_Permutation' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/initial_Perm.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Key_Top' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/key_top.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Key_Generation' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/key_gen.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Key_Generation' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/key_gen.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Permuted_Choice2' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Permuted_Choice2.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Permuted_Choice2' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Permuted_Choice2.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Key_Top' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/key_top.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Round1' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Round1.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Expansion_Permutation' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Expansion_P.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Expansion_Permutation' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Expansion_P.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Xor_Operation' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Xor_operation.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Xor_Operation' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Xor_operation.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Sbox_Rom1' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/s1.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Sbox_Rom1' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/s1.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Sbox_Rom2' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Sbox_Rom2.v:21]
+INFO: [Synth 8-226] default block is never used [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Sbox_Rom2.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'Sbox_Rom2' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Sbox_Rom2.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Sbox_Rom3' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Sbox_Rom3.v:22]
+INFO: [Synth 8-226] default block is never used [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Sbox_Rom3.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'Sbox_Rom3' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Sbox_Rom3.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Sbox_Rom4' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Sbox_Rom4.v:21]
+INFO: [Synth 8-226] default block is never used [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Sbox_Rom4.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'Sbox_Rom4' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Sbox_Rom4.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Sbox_Rom5' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Sbox_Rom5.v:21]
+INFO: [Synth 8-226] default block is never used [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Sbox_Rom5.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'Sbox_Rom5' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Sbox_Rom5.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Sbox_Rom6' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Sbox_Rom6.v:22]
+INFO: [Synth 8-226] default block is never used [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Sbox_Rom6.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'Sbox_Rom6' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Sbox_Rom6.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Sbox_Rom7' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Sbox_Rom7.v:21]
+INFO: [Synth 8-226] default block is never used [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Sbox_Rom7.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'Sbox_Rom7' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Sbox_Rom7.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Sbox_Rom8' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Sbox_Rom8.v:21]
+INFO: [Synth 8-226] default block is never used [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Sbox_Rom8.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'Sbox_Rom8' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Sbox_Rom8.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Sbox_Output' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Sbox_output.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Sbox_Output' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Sbox_output.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Permutation' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Permutation.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Permutation' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Permutation.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Xor_Permutation' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Xor_permutation.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Xor_Permutation' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Xor_permutation.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Reg32' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Reg32.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Reg32' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Reg32.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Round1' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Round1.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Swap' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Swap.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Swap' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Swap.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Inverse_Initial_Permutation' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/inverse_initial_perm.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Inverse_Initial_Permutation' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/inverse_initial_perm.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Des_Top' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/imports/DES verilog files/Des_Top.v:21]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/new/uart_tx.v:42]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/new/uart_tx.v:93]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/new/uart_tx.v:106]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/new/uart_tx.v:42]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/new/controller.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/new/controller.v:7]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'your_instance_name'. This will prevent further optimization [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/new/controller.v:59]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'des'. This will prevent further optimization [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/new/controller.v:80]
+WARNING: [Synth 8-6014] Unused sequential element byte_buffer_reg was removed.  [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/new/controller.v:167]
+WARNING: [Synth 8-3848] Net cathodes in module/entity controller does not have driver. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/new/controller.v:16]
+WARNING: [Synth 8-3848] Net anodes in module/entity controller does not have driver. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/new/controller.v:17]
+WARNING: [Synth 8-3848] Net CHIP_SELECT_BAR in module/entity controller does not have driver. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/sources_1/new/controller.v:39]
+WARNING: [Synth 8-7129] Port LEFT_CIRCULAR_SHIFT1[26] in module Permuted_Choice2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LEFT_CIRCULAR_SHIFT1[15] in module Permuted_Choice2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LEFT_CIRCULAR_SHIFT1[10] in module Permuted_Choice2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LEFT_CIRCULAR_SHIFT1[7] in module Permuted_Choice2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RIGHT_CIRCULAR_SHIFT1[25] in module Permuted_Choice2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RIGHT_CIRCULAR_SHIFT1[22] in module Permuted_Choice2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RIGHT_CIRCULAR_SHIFT1[18] in module Permuted_Choice2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RIGHT_CIRCULAR_SHIFT1[9] in module Permuted_Choice2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port KEY[64] in module Key_Generation is either unconnected or has no load
+WARNING: [Synth 8-7129] Port KEY[56] in module Key_Generation is either unconnected or has no load
+WARNING: [Synth 8-7129] Port KEY[48] in module Key_Generation is either unconnected or has no load
+WARNING: [Synth 8-7129] Port KEY[40] in module Key_Generation is either unconnected or has no load
+WARNING: [Synth 8-7129] Port KEY[32] in module Key_Generation is either unconnected or has no load
+WARNING: [Synth 8-7129] Port KEY[24] in module Key_Generation is either unconnected or has no load
+WARNING: [Synth 8-7129] Port KEY[16] in module Key_Generation is either unconnected or has no load
+WARNING: [Synth 8-7129] Port KEY[8] in module Key_Generation is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[7] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[6] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[5] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[4] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[3] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[2] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[1] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[0] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodes[3] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodes[2] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodes[1] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodes[0] in module controller is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2035.273 ; gain = 446.707 ; free physical = 321 ; free virtual = 4946
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1379.297; parent = 1174.670; children = 204.627
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3008.215; parent = 2035.277; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2053.086 ; gain = 464.520 ; free physical = 322 ; free virtual = 4946
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1379.297; parent = 1174.670; children = 204.627
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3026.027; parent = 2053.090; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2053.086 ; gain = 464.520 ; free physical = 322 ; free virtual = 4946
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1379.297; parent = 1174.670; children = 204.627
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3026.027; parent = 2053.090; children = 972.938
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.1 . Memory (MB): peak = 2059.023 ; gain = 0.000 ; free physical = 310 ; free virtual = 4934
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.gen/sources_1/ip/ila_0_1/ila_0/ila_0_in_context.xdc] for cell 'your_instance_name'
+Finished Parsing XDC File [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.gen/sources_1/ip/ila_0_1/ila_0/ila_0_in_context.xdc] for cell 'your_instance_name'
+Parsing XDC File [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'decimal_points[3]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'decimal_points[2]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'decimal_points[1]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'decimal_points[0]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'number[14]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'number[13]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'number[12]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'number[11]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'number[10]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'number[9]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'number[8]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'number[7]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'number[6]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'number[5]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'number[4]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'number[3]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'number[2]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'number[1]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'number[0]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[64]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[63]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[62]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[61]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[60]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[59]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[58]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[57]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[56]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[55]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[54]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[53]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[52]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[51]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[50]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[49]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[48]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[47]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[46]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[45]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[44]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[43]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[42]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[41]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[40]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[39]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:92]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[38]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[37]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[36]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[35]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[34]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[33]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[32]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[31]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[30]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[29]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[28]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[27]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[26]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[25]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[24]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:107]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[23]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[22]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[21]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:110]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[20]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[19]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[18]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:113]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[17]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[16]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[15]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[14]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[13]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[12]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[11]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[10]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[9]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[8]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[7]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[6]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[5]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[4]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[3]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[2]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:129]
+WARNING: [Vivado 12-584] No ports matched 'CIPHER_TEXT[1]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:130]
+WARNING: [Vivado 12-584] No ports matched 'KEY[64]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:131]
+WARNING: [Vivado 12-584] No ports matched 'KEY[63]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:132]
+WARNING: [Vivado 12-584] No ports matched 'KEY[62]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:133]
+WARNING: [Vivado 12-584] No ports matched 'KEY[61]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:134]
+WARNING: [Vivado 12-584] No ports matched 'KEY[60]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:135]
+WARNING: [Vivado 12-584] No ports matched 'KEY[59]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:136]
+WARNING: [Vivado 12-584] No ports matched 'KEY[58]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:137]
+WARNING: [Vivado 12-584] No ports matched 'KEY[57]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:138]
+WARNING: [Vivado 12-584] No ports matched 'KEY[56]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:139]
+WARNING: [Vivado 12-584] No ports matched 'KEY[55]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:140]
+WARNING: [Vivado 12-584] No ports matched 'KEY[54]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:141]
+WARNING: [Vivado 12-584] No ports matched 'KEY[53]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:142]
+WARNING: [Vivado 12-584] No ports matched 'KEY[52]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:143]
+WARNING: [Vivado 12-584] No ports matched 'KEY[51]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:144]
+WARNING: [Vivado 12-584] No ports matched 'KEY[50]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:145]
+WARNING: [Vivado 12-584] No ports matched 'KEY[49]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:146]
+WARNING: [Vivado 12-584] No ports matched 'KEY[48]'. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:147]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:147]
+Finished Parsing XDC File [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/controller_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/controller_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/controller_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2207.836 ; gain = 0.000 ; free physical = 233 ; free virtual = 4864
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2207.836 ; gain = 0.000 ; free physical = 234 ; free virtual = 4864
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/gourab/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2207.836 ; gain = 619.270 ; free physical = 249 ; free virtual = 4887
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1379.297; parent = 1174.670; children = 204.627
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3148.762; parent = 2175.824; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2207.836 ; gain = 619.270 ; free physical = 249 ; free virtual = 4887
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1379.297; parent = 1174.670; children = 204.627
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3148.762; parent = 2175.824; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for your_instance_name. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2207.836 ; gain = 619.270 ; free physical = 249 ; free virtual = 4887
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1379.297; parent = 1174.670; children = 204.627
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3148.762; parent = 2175.824; children = 972.938
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+            DETECT_START |                               01 |                               01
+                 STARTED |                               10 |                               10
+              CONVERSION |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                              000
+                 CAPTURE |                              010 |                              001
+            TRANSMITTING |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             RX_NUM_1_LB |                             0000 |                             0000
+             RX_NUM_1_HB |                             0001 |                             0001
+             RX_NUM_2_LB |                             0010 |                             0010
+             RX_NUM_2_HB |                             0011 |                             0011
+                TX_NUM_1 |                             0100 |                             0100
+                TX_NUM_2 |                             0101 |                             0101
+                TX_NUM_3 |                             0110 |                             0110
+                TX_NUM_4 |                             0111 |                             0111
+                TX_NUM_5 |                             1000 |                             1000
+                TX_NUM_6 |                             1001 |                             1001
+                TX_NUM_7 |                             1010 |                             1010
+                TX_NUM_8 |                             1011 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2207.836 ; gain = 619.270 ; free physical = 255 ; free virtual = 4895
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1379.297; parent = 1174.670; children = 204.627
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3148.762; parent = 2175.824; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 4     
++---XORs : 
+	   2 Input     48 Bit         XORs := 16    
+	   2 Input     32 Bit         XORs := 16    
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 32    
+	               16 Bit    Registers := 2     
+	               15 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 2     
+	  12 Input   64 Bit        Muxes := 1     
+	   2 Input   56 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 4     
+	  12 Input   16 Bit        Muxes := 2     
+	   2 Input   15 Bit        Muxes := 4     
+	   3 Input   15 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 2     
+	   4 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 3     
+	  12 Input    8 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 1     
+	  12 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 9     
+	   4 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 11    
+	  12 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port KEY[64] in module Des_Top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port KEY[56] in module Des_Top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port KEY[48] in module Des_Top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port KEY[40] in module Des_Top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port KEY[32] in module Des_Top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port KEY[24] in module Des_Top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port KEY[16] in module Des_Top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port KEY[8] in module Des_Top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[7] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[6] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[5] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[4] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[3] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[2] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[1] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[0] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodes[3] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodes[2] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodes[1] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodes[0] in module controller is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 2207.836 ; gain = 619.270 ; free physical = 252 ; free virtual = 4902
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1379.297; parent = 1174.670; children = 204.627
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3148.762; parent = 2175.824; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+----------------------+---------------+----------------+
+|Module Name | RTL Object           | Depth x Width | Implemented As | 
++------------+----------------------+---------------+----------------+
+|Sbox_Rom1   | S1_OUTPUT            | 64x4          | LUT            | 
+|Sbox_Rom2   | S2_OUTPUT            | 64x4          | LUT            | 
+|Sbox_Rom3   | S3_OUTPUT            | 64x4          | LUT            | 
+|Sbox_Rom4   | S4_OUTPUT            | 64x4          | LUT            | 
+|Sbox_Rom5   | S5_OUTPUT            | 64x4          | LUT            | 
+|Sbox_Rom6   | S6_OUTPUT            | 64x4          | LUT            | 
+|Sbox_Rom7   | S7_OUTPUT            | 64x4          | LUT            | 
+|Sbox_Rom8   | S8_OUTPUT            | 64x4          | LUT            | 
+|Des_Top     | round1/s2/S2_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round1/s8/S8_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round2/s5/S5_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round2/s7/S7_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round2/s4/S4_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round2/s3/S3_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round2/s1/S1_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round2/s6/S6_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round2/s2/S2_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round2/s8/S8_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round3/s5/S5_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round3/s7/S7_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round3/s4/S4_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round3/s3/S3_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round3/s1/S1_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round3/s6/S6_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round3/s2/S2_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round3/s8/S8_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round4/s5/S5_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round4/s7/S7_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round4/s4/S4_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round4/s3/S3_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round4/s1/S1_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round4/s6/S6_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round4/s2/S2_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round4/s8/S8_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round5/s5/S5_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round5/s7/S7_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round5/s4/S4_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round5/s3/S3_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round5/s1/S1_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round5/s6/S6_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round5/s2/S2_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round5/s8/S8_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round6/s5/S5_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round6/s7/S7_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round6/s4/S4_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round6/s3/S3_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round6/s1/S1_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round6/s6/S6_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round6/s2/S2_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round6/s8/S8_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round7/s5/S5_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round7/s7/S7_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round7/s4/S4_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round7/s3/S3_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round7/s1/S1_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round7/s6/S6_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round7/s2/S2_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round7/s8/S8_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round8/s5/S5_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round8/s7/S7_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round8/s4/S4_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round8/s3/S3_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round8/s1/S1_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round8/s6/S6_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round8/s2/S2_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round8/s8/S8_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round9/s5/S5_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round9/s7/S7_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round9/s4/S4_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round9/s3/S3_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round9/s1/S1_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round9/s6/S6_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round9/s2/S2_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round9/s8/S8_OUTPUT  | 64x4          | LUT            | 
+|Des_Top     | round10/s5/S5_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round10/s7/S7_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round10/s4/S4_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round10/s3/S3_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round10/s1/S1_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round10/s6/S6_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round10/s2/S2_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round10/s8/S8_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round11/s5/S5_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round11/s7/S7_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round11/s4/S4_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round11/s3/S3_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round11/s1/S1_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round11/s6/S6_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round11/s2/S2_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round11/s8/S8_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round12/s5/S5_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round12/s7/S7_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round12/s4/S4_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round12/s3/S3_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round12/s1/S1_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round12/s6/S6_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round12/s2/S2_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round12/s8/S8_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round13/s5/S5_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round13/s7/S7_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round13/s4/S4_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round13/s3/S3_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round13/s1/S1_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round13/s6/S6_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round13/s2/S2_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round13/s8/S8_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round14/s5/S5_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round14/s7/S7_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round14/s4/S4_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round14/s3/S3_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round14/s1/S1_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round14/s6/S6_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round14/s2/S2_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round14/s8/S8_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round15/s5/S5_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round15/s7/S7_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round15/s4/S4_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round15/s3/S3_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round15/s1/S1_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round15/s6/S6_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round15/s2/S2_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round15/s8/S8_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round16/s5/S5_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round16/s7/S7_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round16/s4/S4_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round16/s3/S3_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round16/s1/S1_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round16/s6/S6_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round16/s2/S2_OUTPUT | 64x4          | LUT            | 
+|Des_Top     | round16/s8/S8_OUTPUT | 64x4          | LUT            | 
++------------+----------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 2207.836 ; gain = 619.270 ; free physical = 150 ; free virtual = 4837
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1490.558; parent = 1285.975; children = 204.627
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3148.762; parent = 2175.824; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 2207.836 ; gain = 619.270 ; free physical = 193 ; free virtual = 4837
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1491.901; parent = 1287.318; children = 204.627
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3148.762; parent = 2175.824; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 2207.836 ; gain = 619.270 ; free physical = 181 ; free virtual = 4829
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1492.612; parent = 1288.029; children = 204.627
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3148.762; parent = 2175.824; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 2207.836 ; gain = 619.270 ; free physical = 137 ; free virtual = 4790
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1492.776; parent = 1288.193; children = 204.627
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3148.762; parent = 2175.824; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 2207.836 ; gain = 619.270 ; free physical = 137 ; free virtual = 4790
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1492.792; parent = 1288.209; children = 204.627
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3148.762; parent = 2175.824; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 2207.836 ; gain = 619.270 ; free physical = 137 ; free virtual = 4789
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1493.569; parent = 1288.986; children = 204.627
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3148.762; parent = 2175.824; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 2207.836 ; gain = 619.270 ; free physical = 137 ; free virtual = 4789
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1493.632; parent = 1289.049; children = 204.627
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3148.762; parent = 2175.824; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 2207.836 ; gain = 619.270 ; free physical = 132 ; free virtual = 4787
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1494.026; parent = 1289.443; children = 204.627
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3148.762; parent = 2175.824; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 2207.836 ; gain = 619.270 ; free physical = 137 ; free virtual = 4791
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1494.026; parent = 1289.443; children = 204.627
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3148.762; parent = 2175.824; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ila_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |ila   |     1|
+|2     |BUFG  |     2|
+|3     |LUT1  |    69|
+|4     |LUT2  |  1297|
+|5     |LUT3  |    20|
+|6     |LUT4  |    77|
+|7     |LUT5  |    11|
+|8     |LUT6  |   598|
+|9     |MUXF7 |     8|
+|10    |FDCE  |  1024|
+|11    |FDRE  |   170|
+|12    |FDSE  |     5|
+|13    |IBUF  |     3|
+|14    |OBUF  |     5|
+|15    |OBUFT |    12|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 2207.836 ; gain = 619.270 ; free physical = 145 ; free virtual = 4780
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1494.058; parent = 1289.475; children = 204.627
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3148.762; parent = 2175.824; children = 972.938
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 2207.836 ; gain = 464.520 ; free physical = 193 ; free virtual = 4828
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 2207.836 ; gain = 619.270 ; free physical = 193 ; free virtual = 4828
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2207.836 ; gain = 0.000 ; free physical = 295 ; free virtual = 4934
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2207.836 ; gain = 0.000 ; free physical = 245 ; free virtual = 4885
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: ff6f1078
+INFO: [Common 17-83] Releasing license: Synthesis
+88 Infos, 156 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [Common 17-1381] The checkpoint '/home/gourab/FPGA_project/UART-basys3_Des Try/UART_RX_TX.runs/synth_1/controller.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file controller_utilization_synth.rpt -pb controller_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  8 14:49:19 2024...

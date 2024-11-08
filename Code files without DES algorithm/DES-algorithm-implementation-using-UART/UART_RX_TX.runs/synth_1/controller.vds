@@ -1,0 +1,398 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Nov  8 14:05:54 2024
+# Process ID: 46642
+# Current directory: /home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.runs/synth_1
+# Command line: vivado -log controller.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source controller.tcl
+# Log file: /home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.runs/synth_1/controller.vds
+# Journal file: /home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.runs/synth_1/vivado.jou
+# Running On: gourab-Inspiron-15-3511, OS: Linux, CPU Frequency: 1700.000 MHz, CPU Physical cores: 4, Host memory: 8057 MB
+#-----------------------------------------------------------
+source controller.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1268.074 ; gain = 60.512 ; free physical = 1562 ; free virtual = 7601
+Command: synth_design -top controller -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 46718
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/gourab/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'data1', assumed default net type 'wire' [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/sources_1/new/controller.v:23]
+INFO: [Synth 8-11241] undeclared symbol 'data2', assumed default net type 'wire' [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/sources_1/new/controller.v:24]
+INFO: [Synth 8-11241] undeclared symbol 'result', assumed default net type 'wire' [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/sources_1/new/controller.v:25]
+WARNING: [Synth 8-8895] 'result' is already implicitly declared on line 25 [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/sources_1/new/controller.v:56]
+WARNING: [Synth 8-8895] 'data1' is already implicitly declared on line 23 [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/sources_1/new/controller.v:57]
+WARNING: [Synth 8-8895] 'data2' is already implicitly declared on line 24 [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/sources_1/new/controller.v:58]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1956.953 ; gain = 366.801 ; free physical = 667 ; free virtual = 6709
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1385.982; parent = 1180.222; children = 205.761
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2932.863; parent = 1959.926; children = 972.938
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'controller' [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/sources_1/new/controller.v:7]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/sources_1/new/controller.v:19]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.runs/synth_1/.Xil/Vivado-46642-gourab-Inspiron-15-3511/realtime/ila_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.runs/synth_1/.Xil/Vivado-46642-gourab-Inspiron-15-3511/realtime/ila_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/sources_1/imports/UART_RX/uart_rx.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/sources_1/imports/UART_RX/uart_rx.v:2]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/sources_1/new/uart_tx.v:42]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/sources_1/new/uart_tx.v:93]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/sources_1/new/uart_tx.v:106]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/sources_1/new/uart_tx.v:42]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/sources_1/new/controller.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/sources_1/new/controller.v:7]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'your_instance_name'. This will prevent further optimization [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/sources_1/new/controller.v:19]
+WARNING: [Synth 8-6014] Unused sequential element byte_buffer_reg was removed.  [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/sources_1/new/controller.v:159]
+WARNING: [Synth 8-3848] Net cathodes in module/entity controller does not have driver. [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/sources_1/new/controller.v:15]
+WARNING: [Synth 8-3848] Net anodes in module/entity controller does not have driver. [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/sources_1/new/controller.v:16]
+WARNING: [Synth 8-7129] Port cathodes[7] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[6] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[5] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[4] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[3] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[2] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[1] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[0] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodes[3] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodes[2] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodes[1] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodes[0] in module controller is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2031.891 ; gain = 441.738 ; free physical = 729 ; free virtual = 6772
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1385.982; parent = 1180.222; children = 205.761
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3004.832; parent = 2031.895; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2049.703 ; gain = 459.551 ; free physical = 729 ; free virtual = 6772
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1385.982; parent = 1180.222; children = 205.761
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3022.645; parent = 2049.707; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2049.703 ; gain = 459.551 ; free physical = 729 ; free virtual = 6772
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1385.982; parent = 1180.222; children = 205.761
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3022.645; parent = 2049.707; children = 972.938
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2049.703 ; gain = 0.000 ; free physical = 732 ; free virtual = 6775
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.gen/sources_1/ip/ila_0_2/ila_0/ila_0_in_context.xdc] for cell 'your_instance_name'
+Finished Parsing XDC File [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.gen/sources_1/ip/ila_0_2/ila_0/ila_0_in_context.xdc] for cell 'your_instance_name'
+Parsing XDC File [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'decimal_points[3]'. [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'decimal_points[2]'. [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'decimal_points[1]'. [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'decimal_points[0]'. [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'number[14]'. [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'number[13]'. [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'number[12]'. [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'number[11]'. [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'number[10]'. [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'number[9]'. [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'number[8]'. [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'number[7]'. [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'number[6]'. [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'number[5]'. [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'number[4]'. [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'number[3]'. [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'number[2]'. [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'number[1]'. [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'number[0]'. [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc:65]
+Finished Parsing XDC File [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/controller_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.srcs/constrs_1/new/uart_rx_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/controller_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/controller_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2204.453 ; gain = 0.000 ; free physical = 687 ; free virtual = 6732
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2204.453 ; gain = 0.000 ; free physical = 687 ; free virtual = 6732
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/gourab/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2204.453 ; gain = 614.301 ; free physical = 748 ; free virtual = 6792
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1385.982; parent = 1180.222; children = 205.761
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3145.379; parent = 2172.441; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2204.453 ; gain = 614.301 ; free physical = 748 ; free virtual = 6792
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1385.982; parent = 1180.222; children = 205.761
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3145.379; parent = 2172.441; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for your_instance_name. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2204.453 ; gain = 614.301 ; free physical = 748 ; free virtual = 6792
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1385.982; parent = 1180.222; children = 205.761
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3145.379; parent = 2172.441; children = 972.938
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+            DETECT_START |                               01 |                               01
+                 STARTED |                               10 |                               10
+              CONVERSION |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                              000
+                 CAPTURE |                              010 |                              001
+            TRANSMITTING |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             RX_NUM_1_LB |                             0000 |                             0000
+             RX_NUM_1_HB |                             0001 |                             0001
+             RX_NUM_2_LB |                             0010 |                             0010
+             RX_NUM_2_HB |                             0011 |                             0011
+                TX_NUM_1 |                             0100 |                             0100
+                TX_NUM_2 |                             0101 |                             0101
+                TX_NUM_3 |                             0110 |                             0110
+                TX_NUM_4 |                             0111 |                             0111
+                TX_NUM_5 |                             1000 |                             1000
+                TX_NUM_6 |                             1001 |                             1001
+                TX_NUM_7 |                             1010 |                             1010
+                TX_NUM_8 |                             1011 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2204.453 ; gain = 614.301 ; free physical = 736 ; free virtual = 6780
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1385.982; parent = 1180.222; children = 205.761
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3145.379; parent = 2172.441; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 4     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               15 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 1     
+	  12 Input   64 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 3     
+	  12 Input   16 Bit        Muxes := 1     
+	   2 Input   15 Bit        Muxes := 4     
+	   3 Input   15 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 2     
+	   4 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 3     
+	  12 Input    8 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 1     
+	  12 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 9     
+	   4 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 11    
+	  12 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port cathodes[7] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[6] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[5] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[4] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[3] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[2] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[1] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cathodes[0] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodes[3] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodes[2] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodes[1] in module controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port anodes[0] in module controller is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2204.453 ; gain = 614.301 ; free physical = 757 ; free virtual = 6805
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1385.982; parent = 1180.222; children = 205.761
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3145.379; parent = 2172.441; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2204.453 ; gain = 614.301 ; free physical = 666 ; free virtual = 6714
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1492.578; parent = 1286.880; children = 205.761
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3145.379; parent = 2172.441; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2204.453 ; gain = 614.301 ; free physical = 658 ; free virtual = 6706
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1493.219; parent = 1287.521; children = 205.761
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3145.379; parent = 2172.441; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2204.453 ; gain = 614.301 ; free physical = 654 ; free virtual = 6703
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1493.527; parent = 1287.829; children = 205.761
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3145.379; parent = 2172.441; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2204.453 ; gain = 614.301 ; free physical = 698 ; free virtual = 6747
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1493.695; parent = 1287.997; children = 205.761
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3145.379; parent = 2172.441; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2204.453 ; gain = 614.301 ; free physical = 698 ; free virtual = 6747
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1493.711; parent = 1288.013; children = 205.761
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3145.379; parent = 2172.441; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2204.453 ; gain = 614.301 ; free physical = 698 ; free virtual = 6747
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1493.855; parent = 1288.157; children = 205.761
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3145.379; parent = 2172.441; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2204.453 ; gain = 614.301 ; free physical = 698 ; free virtual = 6747
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1493.934; parent = 1288.235; children = 205.761
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3145.379; parent = 2172.441; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2204.453 ; gain = 614.301 ; free physical = 698 ; free virtual = 6747
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1493.934; parent = 1288.235; children = 205.761
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3145.379; parent = 2172.441; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2204.453 ; gain = 614.301 ; free physical = 698 ; free virtual = 6747
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1493.949; parent = 1288.251; children = 205.761
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3145.379; parent = 2172.441; children = 972.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ila_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |ila   |     1|
+|2     |BUFG  |     2|
+|3     |LUT1  |     5|
+|4     |LUT2  |    17|
+|5     |LUT3  |    16|
+|6     |LUT4  |    80|
+|7     |LUT5  |    19|
+|8     |LUT6  |    70|
+|9     |MUXF7 |     8|
+|10    |FDRE  |   170|
+|11    |FDSE  |     5|
+|12    |IBUF  |     2|
+|13    |OBUF  |     5|
+|14    |OBUFT |    12|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2204.453 ; gain = 614.301 ; free physical = 698 ; free virtual = 6747
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1493.980; parent = 1288.282; children = 205.761
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3145.379; parent = 2172.441; children = 972.938
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2204.453 ; gain = 459.551 ; free physical = 734 ; free virtual = 6783
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2204.453 ; gain = 614.301 ; free physical = 733 ; free virtual = 6782
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2204.453 ; gain = 0.000 ; free physical = 822 ; free virtual = 6871
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2204.453 ; gain = 0.000 ; free physical = 774 ; free virtual = 6823
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 2d125cdb
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:46 . Memory (MB): peak = 2204.453 ; gain = 918.465 ; free physical = 964 ; free virtual = 7013
+INFO: [Common 17-1381] The checkpoint '/home/gourab/FPGA_project/UART-basys3_Des/UART_RX_TX.runs/synth_1/controller.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file controller_utilization_synth.rpt -pb controller_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  8 14:06:54 2024...
