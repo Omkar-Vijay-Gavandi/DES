@@ -34,7 +34,8 @@ The Data Encryption Standard (DES) is a symmetric-key algorithm for digital data
 
 The DES encryption process involves permutations and substitutions across rounds, with final encryption produced after 16 iterations.
 
-![image](https://github.com/user-attachments/assets/7b28f0c0-3929-4599-8fff-c78ee21af83f)
+![image](https://github.com/user-attachments/assets/4c473b82-e830-4882-a074-086bf6becdb2)
+
 
 
 ---
@@ -55,7 +56,11 @@ The DES encryption process involves permutations and substitutions across rounds
 
 A 64-bit key (user-generated or predefined) is transformed into multiple 48-bit subkeys for each round. Bits are discarded and remaining bits are shifted and permuted as per the DES round requirements.
 
-![Key Transformation](https://github.com/user-attachments/assets/9df979ca-d306-4bae-93bc-3c65dbc42b5b)
+![image](https://github.com/user-attachments/assets/266553a8-9e3c-4f45-97c6-428fb27b141d)
+
+![image](https://github.com/user-attachments/assets/f948e205-c7b6-4a20-a077-77f18cce7bf3)
+
+
 
 ---
 
@@ -70,7 +75,9 @@ UART (Universal Asynchronous Receiver Transmitter) enables serial communication 
 3. **Optional Parity Bit**: Error detection by ensuring an even or odd count of 1s.
 4. **Stop Bit**: Signals the end of data transfer.
 
-![UART Data Format](https://github.com/user-attachments/assets/d6551f04-cafa-4091-a9a4-06efeded2552)
+![image](https://github.com/user-attachments/assets/67f23191-0296-44b7-92e9-dbeca45560e4)
+
+
 
 ---
 
@@ -99,29 +106,35 @@ end
 
 ### Timing Summary:-
 
-![image](https://github.com/user-attachments/assets/37c3a1a5-b2e7-4e8e-a768-39ef23db74ab)
+![image](https://github.com/user-attachments/assets/16887ee7-89ed-4b70-a78c-4b2774db25fb)
+
 
 ### Max clock frequency:-
 
-![image](https://github.com/user-attachments/assets/8e660086-f01a-4e6f-a70e-be2463a5a205)
+![image](https://github.com/user-attachments/assets/8cd850fa-31cb-4f28-a973-4a430ee33417)
+
 
 Maximum Clock Frequency= 1/Total Delay (Critical Path)  =    1 / 2.326ns = 429 MHz 
 
 ### Resource Utilization 
 
-![image](https://github.com/user-attachments/assets/be31d04e-c09e-4bad-8ea5-95462c42e094)
+![image](https://github.com/user-attachments/assets/0aeec8ce-29ca-4243-9501-eeea8a6a5de6)
 
-![image](https://github.com/user-attachments/assets/82a38a37-c983-4d40-bd3d-05d579267d11)
+
+![image](https://github.com/user-attachments/assets/c22b9878-3d88-4bd7-8e85-ee968266cbb2)
+
 
 ### Implemented layout diagram 
 
-![image](https://github.com/user-attachments/assets/68527ec9-1b83-439b-b8f4-a5688b6edd28)
+![image](https://github.com/user-attachments/assets/c267776e-e189-4d74-80c2-bfb71806e000)
 
-![image](https://github.com/user-attachments/assets/9667d7aa-7d4d-410e-ba2a-8b384f633f07)
+
+![image](https://github.com/user-attachments/assets/f0777b01-bb37-493c-a9e9-f0f2d38890c1)
+
 
 ### Latency
 
-![image](https://github.com/user-attachments/assets/a63a5373-049f-43b1-9195-85a6f39d9898)
+![image](https://github.com/user-attachments/assets/0741ae37-0b4f-4de0-8c4e-03dbad3ae8b3)
 
 Latency (in cycles)=Data Path Delay/Clock Period = 7.413ns / 10ns = 0.7413 
 
